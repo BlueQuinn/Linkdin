@@ -1,0 +1,135 @@
+
+
+{
+  
+    "profile":
+    {
+      "name":"Vo Quoc Le Quan",
+      "headline":"Artist at Blueto Studio",
+      "address":"27 Honolulu, Hawaii",
+      "industry":"Fine Art",
+      "current":["Blueto Studio", "White", "Maple"],
+      "previous":["Hogwart", "The Mason", "Arkham"],
+      "education": "Software Engineering - University of Science",
+      "avatar": "images\\avatar.jpg"
+    },
+  
+    "background":
+    {
+      "summary":"Internet executive with over 20 years of experience, including general management of mid to large size organizations, corporate development, product development, business operations, and strategy.\n\n Currently CEO at LinkedIn, the web's largest and most powerful network of professionals. \n\nPrior to LinkedIn, was an Executive in Residence at Accel Partners and Greylock Partners. Primarily focused on advising the leadership teams of the firm's existing consumer technology portfolio companies while also working closely with the firm’s partners to evaluate new investment opportunities.",
+
+      "experience": [
+        {
+          "company": "LinkedIn",
+          "title": "CEO",
+          "location": "LinkedIn",
+          "time": "December 2008 – Present (7 years 5 months)",
+          "description": "Connecting the world's professionals to make them more productive and successful. Since joining the company in December 2008, LinkedIn has expanded its global platform to 23 languages and more than 30 offices around the world, grown its membership base from 33M to more than 347M, and increased its revenue from $78M to over $2.2B in 2014.",
+          "logo": "images\\explogo1.jpg"
+        },
+        {
+          "company": "LinkedIn",
+          "title": "CEO",
+          "location": "LinkedIn",
+          "time": "December 2008 – Present (7 years 5 months)",
+          "description": "Connecting the world's professionals to make them more productive and successful. Since joining the company in December 2008, LinkedIn has expanded its global platform to 23 languages and more than 30 offices around the world, grown its membership base from 33M to more than 347M, and increased its revenue from $78M to over $2.2B in 2014.",
+          "logo": "images\\explogo1.jpg"
+        },
+        {
+          "company": "LinkedIn",
+          "title": "CEO",
+          "location": "LinkedIn",
+          "time": "December 2008 – Present (7 years 5 months)",
+          "description": "Connecting the world's professionals to make them more productive and successful. Since joining the company in December 2008, LinkedIn has expanded its global platform to 23 languages and more than 30 offices around the world, grown its membership base from 33M to more than 347M, and increased its revenue from $78M to over $2.2B in 2014.",
+          "logo": "images\\explogo1.jpg"
+        }
+      ],
+
+      "project": [
+        {
+          "name": "GmPaint",
+          "occupation": "founder",
+          "time": "March 2014 - January 2015",
+          "url": "http://lequan-store.vmwares.in/",
+          "description": "Marx placed some restrictions on the validity of his value theory: he said that in order for it to hold, the commodity must not be a useless item; and it is not the actual amount of labour that went into producing a particular individual commodity that determines its value, but the amount of labour that a worker of average energy and ability, working with average intensity, using the prevailing techniques of the day, would need to produce it. A formal statement of the law is: the value of a commodity is equal to the average socially necessary labour time required for its production."
+        },
+        {
+          "name": "GmPaint",
+          "occupation": "founder",
+          "time": "March 2014 - January 2015",
+          "url": "http://lequan-store.vmwares.in/",
+          "description": "Marx placed some restrictions on the validity of his value theory: he said that in order for it to hold, the commodity must not be a useless item; and it is not the actual amount of labour that went into producing a particular individual commodity that determines its value, but the amount of labour that a worker of average energy and ability, working with average intensity, using the prevailing techniques of the day, would need to produce it. A formal statement of the law is: the value of a commodity is equal to the average socially necessary labour time required for its production."
+        }
+      ],
+
+      "skill": [
+        {
+          "top-skill": [
+            {
+              "xp": 99,
+              "name": "Lying"
+            },
+            {
+              "xp": 12,
+              "name": "Lying"
+            },
+            {
+              "xp": 77,
+              "name": "Lying"
+            }
+          ]
+        },
+        {
+          "other-skill": [
+            {
+              "xp": 99,
+              "name": "Lying"
+            },
+            {
+              "xp": 12,
+              "name": "Lying"
+            },
+            {
+              "xp": 77,
+              "name": "Lying"
+            }
+          ]
+        }
+      ],
+
+      "education": [
+        {
+          "school": "Hogwart",
+          "time": "September 2010 - May 2013",
+          "degree": "Spellcaster",
+          "major": "Poison",
+          "grade": "A+",
+          "cctivities and societies": "Marx argued that if value is a property common to all commodities, then whatever it is derived from, whatever determines it, must be common to all commodities. The only relevant thing that is, in Marx's view, common to all commodities is human labour: they are all produced by human labour.",
+          "description": "Marx placed some restrictions on the validity of his value theory: he said that in order for it to hold, the commodity must not be a useless item; and it is not the actual amount of labour that went into producing a particular individual commodity that determines its value, but the amount of labour that a worker of average energy and ability, working with average intensity, using the prevailing techniques of the day, would need to produce it. A formal statement of the law is: the value of a commodity is equal to the average socially necessary labour time required for its production.",
+          "logo": "images\\Hogwart.jpg"
+        },
+        {
+          "school": "Hogwart",
+          "time": "September 2010 - May 2013",
+          "degree": "Spellcaster",
+          "major": "Poison",
+          "grade": "A+",
+          "cctivities and societies": "Marx argued that if value is a property common to all commodities, then whatever it is derived from, whatever determines it, must be common to all commodities. The only relevant thing that is, in Marx's view, common to all commodities is human labour: they are all produced by human labour.",
+          "description": "Marx placed some restrictions on the validity of his value theory: he said that in order for it to hold, the commodity must not be a useless item; and it is not the actual amount of labour that went into producing a particular individual commodity that determines its value, but the amount of labour that a worker of average energy and ability, working with average intensity, using the prevailing techniques of the day, would need to produce it. A formal statement of the law is: the value of a commodity is equal to the average socially necessary labour time required for its production.",
+          "logo": "images\\Hogwart.jpg"
+        },
+        {
+          "school": "Hogwart",
+          "time": "September 2010 - May 2013",
+          "degree": "Spellcaster",
+          "major": "Poison",
+          "grade": "A+",
+          "activities and societies": "Marx argued that if value is a property common to all commodities, then whatever it is derived from, whatever determines it, must be common to all commodities. The only relevant thing that is, in Marx's view, common to all commodities is human labour: they are all produced by human labour.",
+          "description": "Marx placed some restrictions on the validity of his value theory: he said that in order for it to hold, the commodity must not be a useless item; and it is not the actual amount of labour that went into producing a particular individual commodity that determines its value, but the amount of labour that a worker of average energy and ability, working with average intensity, using the prevailing techniques of the day, would need to produce it. A formal statement of the law is: the value of a commodity is equal to the average socially necessary labour time required for its production.",
+          "logo": "images\\Hogwart.jpg"
+        }
+      ]
+    }
+    
+    
+}

@@ -1,0 +1,167 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body ng-app="app" ng-controller="ctrl-root">
+
+    <div id="main">
+        <div id="header" ng-controller="ctrl-profile">
+            <div>
+                <img ng-src="{{avatar}}"/>
+            </div>
+
+            <div id="profile">
+                <div id="biography">
+                    <h2>{{name}}</h2>
+                    <p id="headline">{{headline}}</p>
+                    <div>
+                        <p id="address">{{address}}</p>
+                        <p id="industry">{{industry}}</p>
+                    </div>
+                    <p ng-repeat="cur in current" class="current">{{cur}}</p>
+                    <p ng-repeat="pre in previous" class="previous">{{pre}}</p>
+                    <p class="education">{{education}}</p>
+                    <div id="subscribe">
+                        <button id="btn-follow">Follow</button>
+                        <a id="connect-link">
+
+                        </a>
+                    </div>
+                </div>
+
+                <div id="intro">
+                    <div id="badge"></div>
+                    <div if="follower">
+                        <b></b>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="background"  ng-controller="ctrl-background">
+            <div id="summary">
+                <div class="header">
+                    <img ng-src="{{icon}}"/>
+                    <p class="bg-title">Summary</p>
+                </div>
+
+                <div class="content">
+                    <p>{{summary}}</p>
+                </div>
+            </div>
+
+            <div id="experience">
+                <div class="header">
+                    <img ng-src="{{icon}}" />
+                    <p class="bg-title">Experience</p>
+                </div>
+
+                <div class="content" ng-repeat="exp in experience">
+                    <div class="intro">
+                        <div class="exp-info">
+                            <b class="title">{{exp.title}}</b>
+                            <p class="company">{{exp.company}}</p>
+                            <div>
+                                <p class="time">{{exp.time}}</p>
+                                <p class="location">{{exp.location}}</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img ng-src="{{exp.logo}}" />
+                        </div>
+                    </div>
+
+                    <div class="exp-description">
+                        <p>{{exp.description}}</p>
+                    </div>
+
+                </div>
+                </div>
+
+            <div id="project">
+                <div class="header">
+                    <img ng-src="{{icon}}"/>
+                    <p class="bg-title">Projects</p>
+                </div>
+
+                <div class="content" ng-repeat="prj in project">
+                    <div class="prj-info">
+                        <a href="{{prj.url}}">
+                            <b class="title">{{prj.name}}</b>
+                        </a>
+                        <p class="occupation">{{prj.occupation}}</p>
+                        <p class="date">{{prj.time}}</p>
+                    </div>
+                    <p>{{prj.description}}</p>
+                </div>
+            </div>
+
+            <div id="skills">
+                <div class="header">
+                    <img ng-src="{{icon}}" />
+                    <p class="bg-title">Skills</p>
+                </div>
+
+                <div class="content" ng-bind="skill">
+                    <div class="top-skill" ng-repeat="sk in skill[0]">
+                        <div class="skill-exp">
+                            <p>{{sk.xp}}</p>
+                        </div>
+                        <div class="skill-name">
+                            <p>{{sk.name}}</p>
+                        </div>
+                    </div>
+
+                    <div class="other-skill" ng-repeat="sk in other-skill">
+                        <div class="skill-exp">
+                            <p>{{sk.xp}}</p>
+                        </div>
+                        <div class="skill-name">
+                            <p>{{sk.name}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="education">
+                <div class="header">
+                    <img ng-src="{{icon}}" />
+                    <p class="bg-title">Education</p>
+                </div>
+
+                <div class="content" ng-repeat="edu in education">
+                    <div class="edu-info">
+                        <b class="school">{{edu.school}}</b>
+                        <div>
+                            <p>{{edu.degree}}</p>
+                            <p>{{edu.major}}</p>
+                            <p>{{edu.grade}}</p>
+                        </div>
+                        <p class="time">{{edu.time}}</p>
+                        <p>{{edu.description}}</p>
+                    </div>
+
+                    <div>
+                        <img ng-src="{{edu.logo}}" />
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js"></script>
+    <script src="js\script.js"></script>
+    <script src="js\utils.js"></script>
+</body>
+</html>
