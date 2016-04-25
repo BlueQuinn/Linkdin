@@ -1,14 +1,15 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
-
 </head>
 <body ng-app="app" ng-controller="ctrl-root">
 
-    <div id="main">
-        <div id="header" ng-controller="ctrl-profile">
+    <div id="main" class="container-fluid">
+        <div id="header" ng-controller="ctrl-profile" class="col-lg-4">
             <div>
-                <img ng-src="{{avatar}}"/>
+                <img id="avatar" class="img-responsive" ng-src="{{avatar}}"/>
             </div>
 
             <div id="profile">
@@ -41,11 +42,11 @@
 
         </div>
 
-        <div id="background"  ng-controller="ctrl-background">
+        <div id="background" ng-controller="ctrl-background" class="col-lg-8">
             <div id="summary">
                 <div class="header">
-                    <img ng-src="{{icon}}"/>
-                    <p class="bg-title">Summary</p>
+                    <img src="images\summary.png"/>
+                    <h3 class="header-title">Summary</h3>
                 </div>
 
                 <div class="content">
@@ -55,13 +56,13 @@
 
             <div id="experience">
                 <div class="header">
-                    <img ng-src="{{icon}}" />
-                    <p class="bg-title">Experience</p>
+                    <img src="images\experience.png" />
+                    <h3 class="header-title">Experience</h3>
                 </div>
 
                 <div class="content" ng-repeat="exp in experience">
                     <div class="intro">
-                        <div class="exp-info">
+                        <div class="exp-info col-lg-10">
                             <b class="title">{{exp.title}}</b>
                             <p class="company">{{exp.company}}</p>
                             <div>
@@ -70,7 +71,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="col-lg-2">
                             <img ng-src="{{exp.logo}}" />
                         </div>
                     </div>
@@ -80,12 +81,12 @@
                     </div>
 
                 </div>
-                </div>
+            </div>
 
             <div id="project">
                 <div class="header">
-                    <img ng-src="{{icon}}"/>
-                    <p class="bg-title">Projects</p>
+                    <img src="images\\project.png"/>
+                    <h3 class="header-title">Projects</h3>
                 </div>
 
                 <div class="content" ng-repeat="prj in project">
@@ -94,7 +95,7 @@
                             <b class="title">{{prj.name}}</b>
                         </a>
                         <p class="occupation">{{prj.occupation}}</p>
-                        <p class="date">{{prj.time}}</p>
+                        <p class="time">{{prj.time}}</p>
                     </div>
                     <p>{{prj.description}}</p>
                 </div>
@@ -102,8 +103,8 @@
 
             <div id="skills">
                 <div class="header">
-                    <img ng-src="{{icon}}" />
-                    <p class="bg-title">Skills</p>
+                    <img src="images\\skill.png"/>
+                    <h3 class="header-title">Skills</h3>
                 </div>
 
                 <div class="content" ng-bind="skill">
@@ -129,25 +130,32 @@
 
             <div id="education">
                 <div class="header">
-                    <img ng-src="{{icon}}" />
-                    <p class="bg-title">Education</p>
+                    <img src="images\\education.png"/>
+                    <h3 class="header-title">Education</h3>
                 </div>
 
                 <div class="content" ng-repeat="edu in education">
-                    <div class="edu-info">
-                        <b class="school">{{edu.school}}</b>
-                        <div>
-                            <p>{{edu.degree}}</p>
-                            <p>{{edu.major}}</p>
-                            <p>{{edu.grade}}</p>
+                    <div class="intro">
+                        <div class="edu-info col-lg-10">
+                            <b class="school title">{{edu.school}}</b>
+                            <div>
+                                <p>{{edu.degree}}</p>
+                                <p> | </p>
+                                <p>{{edu.major}}</p>
+                                <p> | </p>
+                                <p class="edu-grade">{{edu.grade}}</p>
+                            </div>
+                            <p class="time">{{edu.time}}</p>
                         </div>
-                        <p class="time">{{edu.time}}</p>
+
+                        <div class="col-lg-2">
+                            <img ng-src="{{edu.logo}}" />
+                        </div>
+                    </div>
+                    <div class="exp-description">
                         <p>{{edu.description}}</p>
                     </div>
-
-                    <div>
-                        <img ng-src="{{edu.logo}}" />
-                    </div>
+                   
                 </div>
             </div>
 

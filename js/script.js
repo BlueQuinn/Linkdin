@@ -40,7 +40,7 @@ function binding(src, dst, action)
 
 app.controller("ctrl-root", function($scope, $http)
 {
-    $http.get('https://api.myjson.com/bins/16lg2').success(function (data)
+    $http.get('https://api.myjson.com/bins/3d7ui').success(function (data)
     {
         binding(data, information, connect);
         //information = data;
