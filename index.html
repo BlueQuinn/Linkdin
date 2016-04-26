@@ -9,13 +9,12 @@
 <body ng-app="app" ng-controller="ctrl-root">
 
     <div id="main" class="container-fluid">
-        <div id="header" ng-controller="ctrl-profile" class="col-lg-4 animated bounceInLeft">
+        <div id="header" ng-controller="ctrl-profile" class="col-lg-4 col-md-4 animated bounceInLeft">
             <div>
                 <img id="avatar" class="img-responsive animated rotateIn" ng-src="{{avatar}}"/>
             </div>
 
             <div id="profile">
-                <div>
                     <div id="biography" class="bio">
                         <img class="col-lg-2" src="images\profile.png"/>
                         <div class="col-lg-10">
@@ -55,21 +54,10 @@
                             <p>{{address.office}}</p>
                         </div>
                     </div>
-
-                </div>
-
-                <div id="intro">
-                    <div id="badge"></div>
-                    <div if="follower">
-                        <b></b>
-                        <p></p>
-                    </div>
-                </div>
             </div>
-
         </div>
 
-        <div id="background" ng-controller="ctrl-background" class="col-lg-8 animated bounceInRight">
+        <div id="background" ng-controller="ctrl-background" class="col-lg-8 col-md-8 animated bounceInRight">
             <div id="summary">
                 <div class="header">
                     <img src="images\summary.png"/>
@@ -89,7 +77,11 @@
 
                 <div class="content" ng-repeat="exp in experience">
                     <div class="intro">
-                        <div class="exp-info col-lg-10">
+                        <div>
+                            <img class="logo" ng-src="{{exp.logo}}" />
+                        </div>
+
+                        <div class="exp-info">
                             <b class="title">{{exp.title}}</b>
                             <p class="company">{{exp.company}}</p>
                             <div>
@@ -97,13 +89,9 @@
                                 <p class="location">{{exp.location}}</p>
                             </div>
                         </div>
-
-                        <div class="col-lg-2">
-                            <img ng-src="{{exp.logo}}" />
-                        </div>
                     </div>
 
-                    <div class="exp-description">
+                    <div class="description">
                         <p>{{exp.description}}</p>
                     </div>
 
@@ -137,18 +125,21 @@
                 <div class="content">
                     <div class="top-skill" ng-repeat="sk in skill.top">
                         <div class="skill-exp">
-                                <p>{{sk.xp}}</p>
+                            <!--<p>{{sk.xp}}</p>-->
+                            {{sk.xp}}
                         </div>
                         <div class="skill-name">
                             <p>{{sk.name}}</p>
                         </div>
                     </div>
 
+                    <hr />
+
                     <div class="other-skill" ng-repeat="sk in skill.other">
-                        <div class="skill-exp col-lg-3">
-                            <p>{{sk.xp}}</p>
+                        <div class="skill-exp">
+                            {{sk.xp}}
                         </div>
-                        <div class="skill-name col-lg-9">
+                        <div class="skill-name">
                             <p>{{sk.name}}</p>
                         </div>
                     </div>
@@ -163,7 +154,11 @@
 
                 <div class="content" ng-repeat="edu in education">
                     <div class="intro">
-                        <div class="edu-info col-lg-10">
+                        <div>
+                            <img class="logo" ng-src="{{edu.logo}}" />
+                        </div>
+                        
+                        <div class="edu-info">
                             <b class="school title">{{edu.school}}</b>
                             <div>
                                 <p>{{edu.degree}}</p>
@@ -174,21 +169,13 @@
                             </div>
                             <p class="time">{{edu.time}}</p>
                         </div>
-
-                        <div class="col-lg-2">
-                            <img ng-src="{{edu.logo}}" />
-                        </div>
                     </div>
-                    <div class="exp-description">
+                    <div class="description">
                         <p>{{edu.description}}</p>
                     </div>
-                   
                 </div>
             </div>
-
-
         </div>
-
     </div>
 
 
