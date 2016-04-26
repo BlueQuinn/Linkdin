@@ -9,14 +9,15 @@
 <body ng-app="app" ng-controller="ctrl-root">
 
     <div id="main" class="container-fluid">
-        <div id="header" ng-controller="ctrl-profile" class="col-lg-4 col-md-4 animated bounceInLeft">
+        <div id="header" ng-controller="ctrl-profile" class="sidebar-outer col-lg-4 col-md-4 animated bounceInLeft">
             <div>
-                <img id="avatar" class="img-responsive animated rotateIn" ng-src="{{avatar}}"/>
-            </div>
+                <div>
+                    <img id="avatar" class="img-responsive animated rotateIn" ng-src="{{avatar}}" />
+                </div>
 
-            <div id="profile">
+                <div id="profile">
                     <div id="biography" class="bio">
-                        <img class="col-lg-2" src="images\profile.png"/>
+                        <img class="col-lg-2" src="images\profile.png" />
                         <div class="col-lg-10">
                             <h2>{{name}}</h2>
                             <h4 id="headline">{{headline}}</h4>
@@ -54,6 +55,7 @@
                             <p>{{address.office}}</p>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
 
@@ -123,6 +125,7 @@
                 </div>
 
                 <div class="content">
+                    <h3>Top skills</h3>
                     <div class="top-skill" ng-repeat="sk in skill.top">
                         <div class="skill-exp">
                             <!--<p>{{sk.xp}}</p>-->
@@ -135,6 +138,7 @@
 
                     <hr />
 
+                    <h3>Other skills</h3>
                     <div class="other-skill" ng-repeat="sk in skill.other">
                         <div class="skill-exp">
                             {{sk.xp}}

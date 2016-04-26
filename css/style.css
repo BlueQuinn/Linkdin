@@ -34,6 +34,11 @@ p
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
+#header > div
+{
+    position:fixed;
+}
+
 #avatar
 {
     background-size:contain;
@@ -88,6 +93,7 @@ h2
         font-size:15px;
     }
 }
+
 i
 {
     opacity:0.65;
@@ -273,6 +279,11 @@ hr
     border-width:1px;
 }
 
+.top-skill
+{
+    margin:15px;
+}
+
 .other-skill
 {
     display:inline-block;
@@ -285,12 +296,6 @@ hr
     display: inline-block;
     text-align: center;
     color: white;
-    background-color: #2196F3;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 15px;
-    width: 30px;
-    
 }
 
 .top-skill > .skill-exp
@@ -314,13 +319,32 @@ hr
 
 .skill-name
 {
-    margin-left:-5px;
+    margin-left:-8px;
     display:inline-block;
     padding:3px;
+    
 }
 
 .skill-name > p
 {
+    padding-left:8px;
+    padding-right:8px;
     
-    background-color:#E0E0E0;
+       
+}
+
+.top-skill > .skill-name > p
+{
+    padding:4px 8px;
+    border-radius:13px;
+    font-size:17px;
+    box-shadow:0 0 15px #F44336;
+}
+
+.other-skill > .skill-name > p
+{
+    padding:2px 8px;
+    border-radius:9px;
+    font-size:15px;
+    box-shadow:0 0 15px #2196F3;
 }
