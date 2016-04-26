@@ -1,34 +1,61 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link href="css\animation.css" rel="stylesheet" type="text/css">
 </head>
 <body ng-app="app" ng-controller="ctrl-root">
 
     <div id="main" class="container-fluid">
-        <div id="header" ng-controller="ctrl-profile" class="col-lg-4">
+        <div id="header" ng-controller="ctrl-profile" class="col-lg-4 animated bounceInLeft">
             <div>
-                <img id="avatar" class="img-responsive" ng-src="{{avatar}}"/>
+                <img id="avatar" class="img-responsive animated rotateIn" ng-src="{{avatar}}"/>
             </div>
 
             <div id="profile">
-                <div id="biography">
-                    <h2>{{name}}</h2>
-                    <p id="headline">{{headline}}</p>
-                    <div>
-                        <p id="address">{{address}}</p>
-                        <p id="industry">{{industry}}</p>
+                <div>
+                    <div id="biography" class="bio">
+                        <img class="col-lg-2" src="images\profile.png"/>
+                        <div class="col-lg-10">
+                            <h2>{{name}}</h2>
+                            <h4 id="headline">{{headline}}</h4>
+                            <i>birthday</i>
+                            <p>{{birthday}}</p>
+                            <i>nationality</i>
+                            <p>{{nationality}}</p>
+                        </div>
                     </div>
-                    <p ng-repeat="cur in current" class="current">{{cur}}</p>
-                    <p ng-repeat="pre in previous" class="previous">{{pre}}</p>
-                    <p class="education">{{education}}</p>
-                    <div id="subscribe">
-                        <button id="btn-follow">Follow</button>
-                        <a id="connect-link">
 
-                        </a>
+                    <div id="phone" class="bio">
+                        <img class="col-lg-2" src="images\phone.png" />
+                        <div class="col-lg-10">
+                            <i>mobile</i>
+                            <p>{{phone.mobile}}</p>
+                            <i>office</i>
+                            <p>{{phone.office}}</p>
+                        </div>
                     </div>
+
+                    <div id="email" class="bio">
+                        <img class="col-lg-2" src="images\email.png" />
+                        <div class="col-lg-10">
+                            <i>email</i>
+                            <p>{{email}}</p>
+                        </div>
+                    </div>
+
+                    <div id="address" class="bio">
+                        <img class="col-lg-2" src="images\home.png" />
+                        <div class="col-lg-10">
+                            <i>home</i>
+                            <p>{{address.home}}</p>
+                            <i>office</i>
+                            <p>{{address.office}}</p>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div id="intro">
@@ -42,7 +69,7 @@
 
         </div>
 
-        <div id="background" ng-controller="ctrl-background" class="col-lg-8">
+        <div id="background" ng-controller="ctrl-background" class="col-lg-8 animated bounceInRight">
             <div id="summary">
                 <div class="header">
                     <img src="images\summary.png"/>
@@ -85,7 +112,7 @@
 
             <div id="project">
                 <div class="header">
-                    <img src="images\\project.png"/>
+                    <img src="images\project.png"/>
                     <h3 class="header-title">Projects</h3>
                 </div>
 
@@ -103,25 +130,25 @@
 
             <div id="skills">
                 <div class="header">
-                    <img src="images\\skill.png"/>
+                    <img src="images\skill.png"/>
                     <h3 class="header-title">Skills</h3>
                 </div>
 
-                <div class="content" ng-bind="skill">
-                    <div class="top-skill" ng-repeat="sk in skill[0]">
+                <div class="content">
+                    <div class="top-skill" ng-repeat="sk in skill.top">
                         <div class="skill-exp">
-                            <p>{{sk.xp}}</p>
+                                <p>{{sk.xp}}</p>
                         </div>
                         <div class="skill-name">
                             <p>{{sk.name}}</p>
                         </div>
                     </div>
 
-                    <div class="other-skill" ng-repeat="sk in other-skill">
-                        <div class="skill-exp">
+                    <div class="other-skill" ng-repeat="sk in skill.other">
+                        <div class="skill-exp col-lg-3">
                             <p>{{sk.xp}}</p>
                         </div>
-                        <div class="skill-name">
+                        <div class="skill-name col-lg-9">
                             <p>{{sk.name}}</p>
                         </div>
                     </div>
@@ -130,7 +157,7 @@
 
             <div id="education">
                 <div class="header">
-                    <img src="images\\education.png"/>
+                    <img src="images\education.png"/>
                     <h3 class="header-title">Education</h3>
                 </div>
 
@@ -169,6 +196,9 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
     <script src="js\script.js"></script>
     <script src="js\utils.js"></script>
 </body>
