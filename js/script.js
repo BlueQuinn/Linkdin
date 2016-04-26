@@ -1,5 +1,6 @@
 $('p').addClass('animated rollIn');
 
+
 var app = angular.module("app", []);
 var information = { profile: "", background: "" };
 
@@ -45,11 +46,6 @@ app.controller("ctrl-root", function($scope, $http)
     $http.get('https://api.myjson.com/bins/2918q').success(function (data)
     {
         binding(data, information, connect);
-        //information = data;
     })
 });
-
-//app.controller("ctrl-skill", function ($scope) {
-//    $scope["top-skill"] = information.skill["top-skill"];
-//});
 
