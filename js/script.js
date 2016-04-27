@@ -3,6 +3,11 @@ $('p').addClass('animated rollIn');
 
 var app = angular.module("app", []);
 var information = { profile: "", background: "" };
+var model;
+
+app.controller("ctrl-model", function ($scope) {
+    model = $scope;
+});
 
 app.controller("ctrl-profile", function ($scope)
 {
@@ -11,7 +16,12 @@ app.controller("ctrl-profile", function ($scope)
 
 app.controller("ctrl-background", function ($scope) {
     information.background = $scope;
+    $scope.enlarge = function (src) {
+        model.imgSrc = src;
+    }
 });
+
+
 
 function getProperties(obj)     // get list of property names
 {
@@ -43,9 +53,8 @@ function binding(src, dst, action)
 
 app.controller("ctrl-root", function($scope, $http)
 {
-    $http.get('https://api.myjson.com/bins/2918q').success(function (data)
+    $http.get('https://api.myjson.com/bins/1eu7e').success(function (data)
     {
         binding(data, information, connect);
     })
 });
-

@@ -30,7 +30,8 @@
           "location": "Washington DC",
           "time": "December 2008 – Present (7 years 5 months)",
           "description": "Bill Gates saw the potential in GUI-based systems as much as Steve Jobs had and thus began his idea for a project he called Interface Manager. Gates thought he could bring the graphical user interface to the masses at a lower cost than the $9,000 LISA. The rest of Microsoft supported this idea as well but weren’t satisfied with the name. Ironically, given their disparagement of WIMPs, the team selected Windows as the new system’s name.\nWith Windows development, Bill Gates, Paul Allen and Steve Ballmer had begun perhaps the single-most influential collaboration in computer software history. The Windows OS has always had competition, some of which has been free, and some of which has had an edge in style. However, no other operating system is as well known to so many computer users all over the world or so consistently dominant in market share. Microsoft has maintained this position with a steady roll-out of new versions over the years to support and exploit advances in hardware.",
-          "logo": "images\\window.jpg"
+          "logo": "images\\window.jpg",
+          "image": [ "images\\exp11.jpg", "images\\exp12.jpg", "images\\exp13.jpg" ]
         },
         {
           "company": "Apple Inc.",
@@ -38,7 +39,8 @@
           "location": "Sillicon valley",
           "time": "January 2010 - March 2011",
           "description": "With an easy-to-use interface, amazing features, and security at its core, iOS 9 is the foundation of iPhone, iPad, and iPod touch. It’s designed to look beautiful and work beautifully, so even the simplest tasks are more engaging. And because iOS 9 is engineered to take full advantage of the advanced technologies built into Apple hardware, your devices are always years ahead.\nFrom the moment you pick up iPhone, iPad, or iPod touch, you know how to use it. That’s because iOS was designed to be easy to understand. The simple-yet-beautiful Home screen invites you to discover each of the built-in apps and features. So right away, you’re browsing your favorite websites, using search to find whatever you need, or effortlessly switching between apps. And no matter what you’re doing or what app you’re using, everything feels easy, intuitive, and even fun.",
-          "logo": "images\\apple.jpg"
+          "logo": "images\\apple.jpg",
+          "image": [ "images\\exp21.jpg", "images\\exp22.jpg", "images\\exp23.jpg" ]
         },
         {
           "company": "Ubuntu",
@@ -46,7 +48,8 @@
           "location": "Arctic",
           "time": "May 2000 - June 2003",
           "description": "Ubuntu has always been free to download, use and share. We believe in the power of open source software; Ubuntu could not exist without its worldwide community of voluntary developers.\nWith a built-in firewall and virus protection software, Ubuntu is one of the most secure operating systems around. And the long-term support releases give you five years of security patches and updates.",
-          "logo": "images\\ubuntu.jpg"
+          "logo": "images\\ubuntu.jpg",
+          "image": [ "images\\exp31.jpg", "images\\exp32.jpg" ]
         },
         {
           "company": "Google Inc.",
@@ -54,7 +57,8 @@
           "location": "Paris",
           "time": "September 2007 - October 2010",
           "description": "There's a very good chance the Android you have in front of you isn't just powered by the open Android — it needs some extra bits included to make a very different version of Android. Don't feel confused just yet.\nWhether you have a Nexus phone or a Samsung phone or a Motorola phone or any other brand of phone running Android, they all use a version of Android that has those extra bits. These extras aren't part of the open Android, and you can't freely distribute any of them (even it happens all the time, and generally nobody seems to be too bothered about it).\nYour Galaxy S6 runs Android. So does your HTC M9. Or your Sony Xperia. Even your Nexus 5. But they are all very different from each other, and are also different from the open version of Android — which they are ultimately based on.\nBut they are still Android. We want the extras, whether they be the Google applications and Google Play, or the features that Samsung has added. This is the Android we all use and love.",
-          "logo": "images\\android.jpg"
+          "logo": "images\\android.jpg",
+          "image": [ "images\\exp41.jpg", "images\\exp42.jpg", "images\\exp43.jpg", "images\\exp44.jpg" ]
         }
       ],
 

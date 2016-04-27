@@ -173,6 +173,19 @@ i
     float:left;
 }
 
+.gallery
+{
+    display:inline-block;
+    background-size:contain;
+    width:300px;
+    margin:10px;
+    cursor: pointer;
+    border-radius:10px;
+
+    animation-duration:2s;
+    animation-delay:1s;
+}
+
 .time
 {
     font-size:15px;
@@ -343,4 +356,10 @@ hr
     border-radius:9px;
     font-size:15px;
     box-shadow:0 0 15px #2196F3;
+}
+
+.big-img
+{
+    width:700px;
+    background-size:contain;
 }

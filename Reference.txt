@@ -1,5 +1,0 @@
-Bootstrap: http://getbootstrap.com/css/
-
-jQuery: https://jquery.com/
-
-Animation: https://daneden.github.io/animate.css/

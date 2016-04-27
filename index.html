@@ -53,31 +53,26 @@
                 </div>
             </div>
         </div>
-
         <div id="background" ng-controller="ctrl-background" class="col-lg-8 col-md-8 animated bounceInRight">
             <div id="summary">
                 <div class="header">
-                    <img src="images\summary.png"/>
+                    <img src="images\summary.png" />
                     <h3 class="header-title animated bounceInDown">Summary</h3>
                 </div>
-
                 <div class="content">
                     <p>{{summary}}</p>
                 </div>
             </div>
-
             <div id="experience">
                 <div class="header">
                     <img src="images\experience.png" />
                     <h3 class="header-title animated bounceInDown">Experience</h3>
                 </div>
-
                 <div class="content" ng-repeat="exp in experience">
                     <div class="intro">
                         <div>
                             <img class="logo" ng-src="{{exp.logo}}" />
                         </div>
-
                         <div class="exp-info">
                             <b class="title">{{exp.title}}</b>
                             <p class="company">{{exp.company}}</p>
@@ -87,20 +82,17 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="description">
                         <p>{{exp.description}}</p>
+                        <img data-toggle="modal" data-target="#myModal" ng-click="enlarge(img)" class="animated rollIn gallery img-responsive" ng-repeat="img in exp.image" ng-src="{{img}}" />
                     </div>
-
                 </div>
             </div>
-
             <div id="project">
                 <div class="header">
-                    <img src="images\project.png"/>
+                    <img src="images\project.png" />
                     <h3 class="header-title animated bounceInDown">Projects</h3>
                 </div>
-
                 <div class="content" ng-repeat="prj in project">
                     <div class="prj-info">
                         <a href="{{prj.url}}">
@@ -112,13 +104,11 @@
                     <p>{{prj.description}}</p>
                 </div>
             </div>
-
             <div id="skills">
                 <div class="header">
-                    <img src="images\skill.png"/>
+                    <img src="images\skill.png" />
                     <h3 class="header-title animated bounceInDown">Skills</h3>
                 </div>
-
                 <div class="content">
                     <h3>Top skills</h3>
                     <div class="top-skill" ng-repeat="sk in skill.top">
@@ -129,9 +119,7 @@
                             <p>{{sk.name}}</p>
                         </div>
                     </div>
-
                     <hr />
-
                     <h3>Other skills</h3>
                     <div class="other-skill" ng-repeat="sk in skill.other">
                         <div class="skill-exp">
@@ -143,19 +131,17 @@
                     </div>
                 </div>
             </div>
-
             <div id="education">
                 <div class="header">
-                    <img src="images\education.png"/>
+                    <img src="images\education.png" />
                     <h3 class="header-title animated bounceInDown">Education</h3>
                 </div>
-
                 <div class="content" ng-repeat="edu in education">
                     <div class="intro">
                         <div>
                             <img class="logo" ng-src="{{edu.logo}}" />
                         </div>
-                        
+
                         <div class="edu-info">
                             <b class="school title">{{edu.school}}</b>
                             <div>
@@ -174,12 +160,22 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="myModal" role="dialog" ng-controller="ctrl-model">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img class="img-responsive big-img" ng-src="{{imgSrc}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <script src="js\script.js"></script>
 </body>
