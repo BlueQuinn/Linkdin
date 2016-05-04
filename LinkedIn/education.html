@@ -1,25 +1,38 @@
-<div class="header">
-    <img src="images\education.png" />
-    <h3 class="header-title animated bounceInDown">Education</h3>
-</div>
-<div class="content" ng-repeat="edu in education">
-    <div class="intro">
+<div class="content">
+    <div class="intro-modal">
         <div>
-            <img class="logo" ng-src="{{edu.avatar}}" />
-        </div>
-        <div class="edu-info">
-            <b class="school title">{{edu.school}}</b>
-            <div>
-                <p>{{edu.degree}}</p>
-                <p> | </p>
-                <p>{{edu.major}}</p>
-                <p> | </p>
-                <p class="edu-grade">{{edu.grade}}</p>
+            <div class="modal-logo col-lg-3 img-wrap">
+                <input class="browse" type="file" fil accept="image/*" />
+                <img ng-click="browseImage()" class="logo img-responsive" ng-src="{{content.avatar}}" data-toggle="popover" data-trigger="hover" data-content="Click to change image">
             </div>
-            <p class="time">{{edu.time}}</p>
+            <div class="col-lg-9">
+                <div class="form-group">
+                    <label>School</label>
+                    <input type="text" class="form-control" ng-model="content.school">
+                </div>
+                <div class="form-group">
+                    <label>Degree</label>
+                    <input type="text" class="form-control" ng-model="content.degree">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="form-group">
+                <label>Major</label>
+                <input type="text" class="form-control" ng-model="content.major">
+            </div>
+            <div class="form-group">
+                <label>Grade</label>
+                <input type="text" class="form-control" ng-model="content.grade">
+            </div>
+            <div class="form-group">
+                <label>Time</label>
+                <input type="text" class="form-control" ng-model="content.time">
+            </div>
         </div>
     </div>
     <div class="description">
-        <p>{{edu.description}}</p>
+        <label>Description</label>
+        <textarea class="form-control" rows="10" ng-model="content.description"></textarea>
     </div>
 </div>

@@ -93,6 +93,11 @@
     <Content Include="images\havard.jpg" />
     <Content Include="images\hogwart.jpg" />
     <Content Include="images\home.png" />
+    <Content Include="images\menu-edu.png" />
+    <Content Include="images\menu-exp.png" />
+    <Content Include="images\menu-prj.png" />
+    <Content Include="images\menu-skill.png" />
+    <Content Include="images\menu-sum.png" />
     <Content Include="images\phone.png" />
     <Content Include="images\profile.png" />
     <Content Include="images\project.png" />
@@ -126,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

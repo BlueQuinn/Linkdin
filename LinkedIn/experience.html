@@ -3,7 +3,7 @@
         <div>
             <div class="modal-logo col-lg-3 img-wrap">
                 <input class="browse" type="file" fil accept="image/*" />
-                <img ng-click="browseImage()" class="img-responsive" ng-src="{{content.avatar}}" data-toggle="popover" data-trigger="hover" data-content="Click to change image">
+                <img ng-click="browseImage()" class="logo img-responsive" ng-src="{{content.avatar}}" data-toggle="popover" data-trigger="hover" data-content="Click to change image" alt="Click to change image">
             </div>
             <div class="col-lg-9">
                 <div class="form-group">
@@ -30,11 +30,18 @@
     <div class="description">
         <label>Description</label>
         <textarea class="form-control" rows="10" ng-model="content.description"></textarea>
-        <img ng-click="removeImg($index)" class="gallery img-responsive" ng-repeat="img in content.image" ng-src="{{img}}" data-toggle="popover" data-trigger="hover" data-content="Click to remove this image"/>
     </div>
-
-    <div class="col-lg-12 skill-add">
+    
+    <div class="col-lg-12">
+        <input class="browse-multiple" type="file" multiple accept="image/*" />
+        <button ng-click="browseMultiple()" type="button" class="btn btn-info center-btn">
+            <span class="glyphicon glyphicon-plus"></span> Add new images
+        </button>
+    </div>
+    <!--<div class="col-lg-12 exp-add">
         <input class="browse-multiple" type="file" multiple accept="image/*" />
         <button ng-click="browseMultiple()" type="button" class="btn btn-info">Add new images</button>
-    </div>
+    </div>-->
+
+    <img ng-click="removeImg($index)" class="gallery img-responsive" ng-repeat="img in content.image" ng-src="{{img}}" data-toggle="popover" data-trigger="hover" data-content="Click to remove this image">
 </div>

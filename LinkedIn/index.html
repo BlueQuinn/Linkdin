@@ -3,34 +3,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
-
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
-
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     
-    <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />-->
 
-
-
     <link href="css\animation.css" rel="stylesheet" type="text/css">
     <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link href="css\modal.css" rel="stylesheet" />
 </head>
 <body ng-app="app" ng-controller="ctrl-root">
 
     <div id="main" class="container-fluid">
 
-
-
         <div id="header" ng-controller="ctrl-profile" class="col-lg-4 col-md-4 animated bounceInLeft">
             <div>
                 <img class="avatar img-responsive animated fadeInDownBig" ng-src="{{avatar}}" />
             </div>
+
             <div class="profile">
                 <div class="biography">
                     <img class="col-lg-2" src="images\profile.png" />
@@ -70,11 +63,38 @@
                 </div>
             </div>
 
-
+            <div class="col-lg-12">
+                <nav class="radial">
+                    <input type="checkbox" id="menu" checked>
+                    <a href="" data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('profile', 1)">
+                        <span class="helper"></span>
+                        <img src="images\profile.png" />
+                    </a>
+                    <a href="" data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('summary', 2)">
+                        <span class="helper"></span>
+                        <img src="images\menu-sum.png" />
+                    </a>
+                    <a href="" data-toggle="modal" data-target="#editor-modal" ng-click="openList('experience', 'title')">
+                        <span class="helper"></span>
+                        <img src="images\menu-exp.png" />
+                    </a>
+                    <a href="" data-toggle="modal" data-target="#editor-modal" ng-click="openList('project', 'name')">
+                        <span class="helper"></span>
+                        <img src="images\menu-prj.png" />
+                    </a>
+                    <a href="" data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('skill', 2)">
+                        <span class="helper"></span>
+                        <img src="images\menu-skill.png" />
+                    </a>
+                    <a href="" data-toggle="modal" data-target="#editor-modal" ng-click="openList('education', 'school')">
+                        <span class="helper"></span>
+                        <img src="images\menu-edu.png" />
+                    </a>
+                    <label for="menu" class='fa fa-bars'></label>
+                </nav>
+            </div>
         </div>
-
-
-
+    
         <div id="background" ng-controller="ctrl-background" class="col-lg-8 col-md-8 animated bounceInRight">
             <div id="summary">
                 <div class="header">
@@ -183,8 +203,6 @@
             </div>
         </div>
 
-    </div>
-
     <div class="modal fade" id="img-modal" role="dialog" ng-controller="ctrl-img">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -194,6 +212,7 @@
             </div>
         </div>
     </div>
+        </div>
 
     <div class="modal fade" id="editor-modal" role="dialog" ng-controller="ctrl-editor">
         <div class="modal-dialog">
@@ -207,32 +226,19 @@
         </div>
     </div>
 
-    <!--<div class="component col-lg-12">
-        <button class="cn-button" id="cn-button">+</button>
-        <div class="cn-wrapper" id="cn-wrapper">
-            <ul>
-                <li><a data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('profile', 1)"><span class="icon-headphones"></span></a></li>
-                <li><a data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('summary', 2)"><span class="icon-home"></span></a></li>
-                <li><a data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('experience', 2)"><span class="icon-facetime-video"></span></a></li>
-                <li><a data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('project', 2)"><span class="icon-envelope-alt"></span></a></li>
-                <li><a data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('skill', 2)"><span class="icon-facetime-video"></span></a></li>
-                <li><a data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('education', 2)"><span class="icon-envelope-alt"></span></a></li>
-            </ul>
-        </div>
-        <div id="cn-overlay" class="cn-overlay"></div>
-    </div>-->
-
-    <nav class="radialnav col-lg-12">
+    <!--<nav class="radialnav col-lg-12">
         <a href="#" class="ellipsis"><i class="fa fa-bars"></i></a>
         <ul class="menu">
-            <li class="item" data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('profile', 1)"></li>
+            <li class="item" data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('profile', 1)">
+                <img src="images\education.png" />
+            </li>
             <li class="item" data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('summary', 2)"></li>
             <li class="item" data-toggle="modal" data-target="#editor-modal" ng-click="openList('experience', 'title')"></li>
             <li class="item" data-toggle="modal" data-target="#editor-modal" ng-click="openList('project', 'name')"></li>
             <li class="item" data-toggle="modal" data-target="#editor-modal" ng-click="openEditor('skill', 2)"></li>
             <li class="item" data-toggle="modal" data-target="#editor-modal" ng-click="openList('education', 'school')"></li>
         </ul>
-    </nav>
+    </nav>-->
 
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -245,13 +251,6 @@
 
 
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-
-    <!--<script src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/polyfills.js"></script>
-    <script src="js/menu.js"></script>-->
-    <script src="js/menu.js"></script>
 
 
 

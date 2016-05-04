@@ -10,13 +10,15 @@
             <input type="text" class="form-control" ng-model="sk.name">
         </div>
 
-        <button ng-click="removeSkill('top', $index)" type="button" class="btn btn-info skill-remove">
-            <span class="glyphicon glyphicon-bin"></span> Remove
+        <button ng-click="removeSkill('top', $index)" type="button" class="btn btn-danger skill-remove">
+            <span class="glyphicon glyphicon-remove"></span> Remove
         </button>
     </div>
 
-    <div class="col-lg-12 skill-add">
-        <button onclick="addSkill('top')" type="button" class="btn btn-info">Add new</button>
+    <div class="col-lg-12">
+        <button onclick="addSkill('top')" type="button" class="btn btn-info center-btn">
+            <span class="glyphicon glyphicon-plus"></span> Add new
+        </button>
     </div>
 
     <hr />
@@ -32,13 +34,14 @@
             <input type="text" class="form-control" ng-model="sk.name">
         </div>
 
-        <button type="button" class="btn btn-info skill-remove">
-            <span class="glyphicon glyphicon-bin"></span> Remove
+        <button ng-click="removeSkill('other', $index)" type="button" class="btn btn-danger skill-remove">
+            <span class="glyphicon glyphicon-remove"></span> Remove
         </button>
     </div>
 
-    <div class="col-lg-12 skill-add">
-        <button onclick="addSkill('other')" type="button" class="btn btn-info">Add new</button>
+    <div class="col-lg-12">
+        <button onclick="addSkill('other')" type="button" class="btn btn-info center-btn">
+            <span class="glyphicon glyphicon-plus"></span> Add new
+        </button>
     </div>
-
 </div>
