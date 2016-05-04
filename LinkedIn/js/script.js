@@ -19,9 +19,16 @@ app.controller("ctrl-editor", function ($scope) {
 
     editor.loaded = function ()
     {
-        $("#datepicker").datepicker({
+        $('input[name="daterange"]').daterangepicker({
+            locale: {
+                format: 'MMMM D, YYYY'
+            }
+        });
+       
+        $("#birthday").datepicker({
             dateFormat: "dd/mm/yy"
         });
+
         $('[data-toggle="popover"]').popover();
 
         $(".browse").change(function ()

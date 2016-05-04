@@ -1,4 +1,9 @@
-﻿.img-wrap .browse {
+﻿.img-wrap
+{
+    margin-bottom:15px;
+}
+
+.img-wrap .browse {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -12,11 +17,17 @@
     opacity: 0;
 }
 
-.img-wrap > img{
+.img-wrap > img
+{
     margin:auto;
     display:block;
     cursor: pointer;
     background-color:#2196F3;
+}
+
+.intro-modal > div
+{
+    clear:both;
 }
 
 .list-header
@@ -47,15 +58,8 @@ input[type=file]
     overflow:auto;
 }
 
-#editor-modal
-{
-    /*height:100%;
-    width:100%;*/
-}
-
 #editor-modal > .modal-dialog
 {
-    height:100%;
     width:800px;
 }
 

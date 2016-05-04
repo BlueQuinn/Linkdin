@@ -6,22 +6,22 @@
                 <img ng-click="browseImage()" class="logo img-responsive" ng-src="{{content.avatar}}" data-toggle="popover" data-trigger="hover" data-content="Click to change image" alt="Click to change image">
             </div>
             <div class="col-lg-9">
-                <div class="form-group">
+                <div class="form-group col-lg-6">
                     <label>Title</label>
                     <input type="text" class="form-control" ng-model="content.title">
                 </div>
-                <div class="form-group">
+                <div class="form-group col-lg-6">
                     <label>Company</label>
                     <input type="text" class="form-control" ng-model="content.company">
                 </div>
             </div>
         </div>
         <div>
-            <div class="form-group">
+            <div class="form-group col-lg-6">
                 <label>Time</label>
-                <input type="text" class="form-control" ng-model="content.time">
+                <input type="text" class="form-control" name="daterange" value="" ng-model="content.time" />
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-6">
                 <label>Location</label>
                 <input type="text" class="form-control" ng-model="content.location">
             </div>
