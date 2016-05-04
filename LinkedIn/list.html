@@ -1,4 +1,6 @@
-﻿<div class="list-group" ng-repeat="item in content">
+﻿<h4 class="list-header">Click on item to update</h4>
+
+<div class="list-group" ng-repeat="item in content">
     <a ng-click="openItem($index)" href="#" class="list-group-item">{{item}}</a>
     <button ng-click="removeItem($index)" type="button" class="btn btn-danger">
         <span class="glyphicon glyphicon-remove"></span> Remove

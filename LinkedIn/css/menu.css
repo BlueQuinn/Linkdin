@@ -14,15 +14,14 @@ nav.radial {
 nav.radial input {
   display: none;
 }
-nav.radial > label,
-nav.radial > a {
+
+nav.radial > label, nav.radial > a {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #448AFF;
   color: white;
   text-align: center;
   font-size: 0;
@@ -37,7 +36,13 @@ nav.radial a {
   color: transparent;
   text-decoration: none;
   box-sizing: border-box;
+  background-color: #2196F3;
 }
+
+    nav.radial a:nth-child(2) {
+        background-color: #448AFF;
+    }
+
 nav.radial label {
   border-radius: 0 0 3rem 3rem;
   cursor: pointer;
@@ -45,6 +50,7 @@ nav.radial label {
   border-bottom: 0.25rem solid #2f2f2f;
   box-shadow: 0 0.1875rem rgba(0, 0, 0, 0.25);
   transition: border-bottom 0.25s, box-shadow 0.5s;
+  background-color: #448AFF;
 }
 nav.radial input:checked ~ label {
   border-bottom-width: 1px;
@@ -59,7 +65,7 @@ nav.radial a[href] {
   box-sizing: border-box;
 }
 nav.radial a[href]:hover {
-  background-color: #1abc9c;
+  background-color: #EC407A;
   border-bottom-color: #2c7768;
 }
 nav.radial input:checked ~ a[href] {

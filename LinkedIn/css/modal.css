@@ -16,7 +16,12 @@
     margin:auto;
     display:block;
     cursor: pointer;
-    background-color:red;
+    background-color:#2196F3;
+}
+
+.list-header
+{
+    text-align:center;
 }
 
 textarea

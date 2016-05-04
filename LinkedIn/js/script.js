@@ -19,7 +19,9 @@ app.controller("ctrl-editor", function ($scope) {
 
     editor.loaded = function ()
     {
-        $("#datepicker").datepicker();
+        $("#datepicker").datepicker({
+            dateFormat: "dd/mm/yy"
+        });
         $('[data-toggle="popover"]').popover();
 
         $(".browse").change(function ()
