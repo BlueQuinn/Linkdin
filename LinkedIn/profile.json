@@ -1,0 +1,189 @@
+{
+    "profile":
+    {
+      "name":"Vo Quoc Le Quan",
+      "headline": "Graphic designer at Apple Inc.",
+      "birthday": "25/5/1995",
+      "nationality": "Vietnamese",
+      "phone": 
+      {
+        "mobile": "01656438740",
+        "office": "088-99134-75"
+      },
+      "email": "lequan@outlook.com",
+      "address": 
+      {
+        "home": "97 Honolulu, Hawaii",
+        "office": "Paris, France"
+      },
+        "avatar": "images\\avatar.jpg"
+      },
+  
+    "background":
+    {
+      "summary":"Internet executive with over 20 years of experience, including general management of mid to large size organizations, corporate development, product development, business operations, and strategy.\n Currently CEO at LinkedIn, the web's largest and most powerful network of professionals. \nPrior to LinkedIn, was an Executive in Residence at Accel Partners and Greylock Partners. Primarily focused on advising the leadership teams of the firm's existing consumer technology portfolio companies while also working closely with the firm’s partners to evaluate new investment opportunities.",
+
+      "experience": [
+        {
+          "company": "Microsoft",
+          "title": "Project Management",
+          "location": "Washington DC",
+          "time": "December 2008 – Present (7 years 5 months)",
+          "description": "Bill Gates saw the potential in GUI-based systems as much as Steve Jobs had and thus began his idea for a project he called Interface Manager. Gates thought he could bring the graphical user interface to the masses at a lower cost than the $9,000 LISA. The rest of Microsoft supported this idea as well but weren’t satisfied with the name. Ironically, given their disparagement of WIMPs, the team selected Windows as the new system’s name.\nWith Windows development, Bill Gates, Paul Allen and Steve Ballmer had begun perhaps the single-most influential collaboration in computer software history. The Windows OS has always had competition, some of which has been free, and some of which has had an edge in style. However, no other operating system is as well known to so many computer users all over the world or so consistently dominant in market share. Microsoft has maintained this position with a steady roll-out of new versions over the years to support and exploit advances in hardware.",
+          "avatar": "images\\window.jpg",
+          "image": [ "images\\exp11.jpg", "images\\exp12.jpg", "images\\exp13.jpg" ]
+        },
+        {
+          "company": "Apple Inc.",
+          "title": "Designer",
+          "location": "Sillicon valley",
+          "time": "January 2010 - March 2011",
+          "description": "With an easy-to-use interface, amazing features, and security at its core, iOS 9 is the foundation of iPhone, iPad, and iPod touch. It’s designed to look beautiful and work beautifully, so even the simplest tasks are more engaging. And because iOS 9 is engineered to take full advantage of the advanced technologies built into Apple hardware, your devices are always years ahead.\nFrom the moment you pick up iPhone, iPad, or iPod touch, you know how to use it. That’s because iOS was designed to be easy to understand. The simple-yet-beautiful Home screen invites you to discover each of the built-in apps and features. So right away, you’re browsing your favorite websites, using search to find whatever you need, or effortlessly switching between apps. And no matter what you’re doing or what app you’re using, everything feels easy, intuitive, and even fun.",
+          "avatar": "images\\apple.jpg",
+          "image": [ "images\\exp21.jpg", "images\\exp22.jpg", "images\\exp23.jpg" ]
+        },
+        {
+          "company": "Ubuntu",
+          "title": "Founder",
+          "location": "Arctic",
+          "time": "May 2000 - June 2003",
+          "description": "Ubuntu has always been free to download, use and share. We believe in the power of open source software; Ubuntu could not exist without its worldwide community of voluntary developers.\nWith a built-in firewall and virus protection software, Ubuntu is one of the most secure operating systems around. And the long-term support releases give you five years of security patches and updates.",
+          "avatar": "images\\ubuntu.jpg",
+          "image": [ "images\\exp31.jpg", "images\\exp32.jpg" ]
+        },
+        {
+          "company": "Google Inc.",
+          "title": "Data Administrator",
+          "location": "Paris",
+          "time": "September 2007 - October 2010",
+          "description": "There's a very good chance the Android you have in front of you isn't just powered by the open Android — it needs some extra bits included to make a very different version of Android. Don't feel confused just yet.\nWhether you have a Nexus phone or a Samsung phone or a Motorola phone or any other brand of phone running Android, they all use a version of Android that has those extra bits. These extras aren't part of the open Android, and you can't freely distribute any of them (even it happens all the time, and generally nobody seems to be too bothered about it).\nYour Galaxy S6 runs Android. So does your HTC M9. Or your Sony Xperia. Even your Nexus 5. But they are all very different from each other, and are also different from the open version of Android — which they are ultimately based on.\nBut they are still Android. We want the extras, whether they be the Google applications and Google Play, or the features that Samsung has added. This is the Android we all use and love.",
+          "avatar": "images\\android.jpg",
+          "image": [ "images\\exp41.jpg", "images\\exp42.jpg", "images\\exp43.jpg", "images\\exp44.jpg" ]
+        }
+      ],
+
+      "project": [
+        {
+          "name": "Health Software",
+          "occupation": "Backend developer",
+          "time": "March 2014 - January 2015",
+          "url": "http://lequan-store.vmwares.in/?p=89",
+          "description": "The constitution of the World Health Organization had been signed by 61 countries on 22 July 1946, with the first meeting of the World Health Assembly finishing on 24 July 1948. It incorporated the Office International d'Hygiène Publique and the League of Nations Health Organization.\nSince its creation, it has played a leading role in the eradication of smallpox. Its current priorities include communicable diseases, in particular HIV/AIDS, Ebola, malaria and tuberculosis; the mitigation of the effects of non-communicable diseases; sexual and reproductive health, development, and aging; nutrition, food security and healthy eating; occupational health; substance abuse; and driving the development of reporting, publications, and networking.\n"
+        },
+        {
+          "name": "GmPaint",
+          "occupation": "Creator",
+          "time": "June 2015 - December 2015",
+          "url": "http://lequan-store.vmwares.in/?p=4",
+          "description": "Photoshop' s naming scheme was initially based on version numbers. However, in October 2002, following the introduction of Creative Suite branding, each new version of Photoshop was designated with CS plus a number; e.g., the eighth major version of Photoshop was Photoshop CS and the ninth major version was Photoshop CS2. Photoshop CS3 through CS6 were also distributed in two different editions: Standard and Extended. In June 2013, with the introduction of Creative Cloud branding, Photoshop's licensing scheme was changed to that of software as a service and the CS suffixes were replaced with CC. Historically, Photoshop was bundled with additional software such as Adobe ImageReady, Adobe Fireworks, Adobe Bridge, Adobe Device Central and Adobe Camera RAW.\nAlongside Photoshop, Adobe also develops and publishes Photoshop Elements, Photoshop Lightroom, Photoshop Express and Photoshop Touch. Collectively, they are branded as The Adobe Photoshop Family. It is currently a licensed software."
+        },
+        {
+          "name": "Brainy Kids",
+          "occupation": "Founder",
+          "time": "June 2015 - January 2016",
+          "url": "http://lequan-store.vmwares.in/?p=54",
+          "description": "A puzzle is a game, problem, or toy that tests a person's ingenuity or knowledge. In a puzzle, one is required to put pieces together in a logical way, in order to arrive at the correct solution of the puzzle. There are different types of puzzles for different ages, such as crossword puzzles, word-search puzzles, number puzzles, or logic puzzles.\nPuzzles are often devised as a form of entertainment but they can also arise from serious mathematical or logistical problems. In such cases, their solution may be a significant contribution to mathematical research.\nSolutions of puzzles often require the recognition of patterns and the creation of a particular kind of order. Sometimes not because of how complicated and diagonal the pattern can get. People with a high level of inductive reasoning aptitude may be better at solving such puzzles than others. But puzzles based upon inquiry and discovery may be solved more easily by those with good deduction skills. Deductive reasoning improves with practice.\nSome notable creators of puzzles are Sam Loyd, Henry Dudeney, Boris Kordemsky and, more recently, David J. Bodycombe, Will Shortz, Lloyd King, and Martin Gardner."
+        }
+      ],
+
+      "skill": 
+      {
+          "top": [
+            {
+              "xp": 99,
+              "name": "C# programming skill"
+            },
+            {
+              "xp": 98,
+              "name": "UX design"
+            },
+            {
+              "xp": 97,
+              "name": "Spring framework"
+            },
+            {
+              "xp": 96,
+              "name": "Maven"
+            },
+            {
+              "xp": 95,
+              "name": "Surrealism art"
+            },
+            {
+              "xp": 94,
+              "name": "Lying"
+            }
+          ],
+          "other": [
+            {
+              "xp": 75,
+              "name": "Cooking"
+            },
+            {
+              "xp": 55,
+              "name": "Piano"
+            },
+            {
+              "xp": 87,
+              "name": "Swimming"
+            },
+            {
+              "xp": 60,
+              "name": "Origami"
+            },
+            {
+              "xp": 44,
+              "name": "Chess"
+            },
+            {
+              "xp": 48,
+              "name": "Java programming"
+            },
+            {
+              "xp": 76,
+              "name": "Political"
+            },
+            {
+              "xp": 43,
+              "name": "Singing"
+            },
+            {
+              "xp": 77,
+              "name": "Taewondo"
+            }
+          ]
+      },
+
+      "education": [
+        {
+          "school": "Hogwart",
+          "time": "September 2010 - May 2013",
+          "degree": "Spellcaster",
+          "major": "Dark art",
+          "grade": "A+",
+          "description": "The castle is located in the mountains near a loch. The precise location of the school could never be uncovered because it was rendered Unplottable. To Muggles the school looks like an old abandoned castle. Similarly, most wizarding schools locations are protected in order to prevent their ways of teaching being revealed, as well as protect the students and schools themselves from any harm.",
+          "avatar": "images\\hogwart.jpg"
+        },
+        {
+          "school": "Xavier Institute for Higher Learning",
+          "time": "September 2011 - June 2014",
+          "degree": "Bachelor",
+          "major": "Telekinesis",
+          "grade": "A+",
+          "description": "The Massachusetts Academy closes permanently in Generation X #75 (June 2001). Shortly thereafter, the school for young mutants is reopened at the X-Mansion, but the name remains The Xavier Institute for Higher Learning despite the younger student body. The fourth generation of mutant teenagers, featured in Grant Morrison's New X-Men (2001–2004) and in New Mutants (2003–2004; relaunched as New X-Men: Academy X, July 2004–February 2008), study at the mansion until it is destroyed during the 2007–2008 story Messiah Complex and the X-Men subsequently disband and close the Institute.\nThough protected by high-tech defenses, the X-Mansion has often been breached by the supervillains and evil mutants faced by the X-Men. Indeed, the X-Mansion has been destroyed and rebuilt several times. It was demolished in a battle with the Sidri in Uncanny X-Men #154 (February 1982) and atomized by Mister Sinister in Uncanny X-Men #243 (April 1989). It was rebuilt by a future Franklin Richards in moments but reverted to its destroyed state after the time-traveler became confused",
+          "avatar": "images\\xavier.jpg"
+        },
+        {
+          "school": "Havard",
+          "time": "September 2013 - May 2016",
+          "degree": "Professor",
+          "major": "Quantum Physicist",
+          "grade": "A+",
+          "description": "In 1846, the natural history lectures of Louis Agassiz were acclaimed both in New York and on the campus at Harvard College. Agassiz's approach was distinctly idealist and posited Americans' participation in the Divine Nature and the possibility of understanding intellectual existences.\nAgassiz's perspective on science combined observation with intuition and the assumption that a person can grasp the divine plan in all phenomena. When it came to explaining life-forms, Agassiz resorted to matters of shape based on a presumed archetype for his evidence",
+          "avatar": "images\\havard.jpg"
+        }
+      ]
+    }
+    
+    
+}

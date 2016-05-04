@@ -1,0 +1,25 @@
+<div class="header">
+    <img src="images\education.png" />
+    <h3 class="header-title animated bounceInDown">Education</h3>
+</div>
+<div class="content" ng-repeat="edu in education">
+    <div class="intro">
+        <div>
+            <img class="logo" ng-src="{{edu.avatar}}" />
+        </div>
+        <div class="edu-info">
+            <b class="school title">{{edu.school}}</b>
+            <div>
+                <p>{{edu.degree}}</p>
+                <p> | </p>
+                <p>{{edu.major}}</p>
+                <p> | </p>
+                <p class="edu-grade">{{edu.grade}}</p>
+            </div>
+            <p class="time">{{edu.time}}</p>
+        </div>
+    </div>
+    <div class="description">
+        <p>{{edu.description}}</p>
+    </div>
+</div>

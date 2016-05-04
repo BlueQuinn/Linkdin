@@ -1,0 +1,127 @@
+﻿.img-wrap .browse {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    cursor: pointer;
+    opacity: 0;
+    text-align: center;
+    border-radius: 50%;
+}
+.img-wrap:hover .browse {
+    opacity: 0;
+}
+
+.img-wrap > img{
+    margin:auto;
+    display:block;
+    cursor: pointer;
+}
+
+textarea
+{
+    text-align:justify;
+}
+
+
+.big-img
+{
+    width:700px;
+    background-size:contain;
+}
+
+
+#editor-modal
+{
+    height:100%;
+    width:100%;
+}
+
+#editor-modal > .modal-dialog
+{
+    height:100%;
+    width:800px;
+}
+
+#editor > .profile
+{
+    background-color: #448AFF;
+    height:100%;
+    width:80%;
+}
+
+#editor > .content
+{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#datepicker
+{
+    position: relative; z-index: 100000;
+}
+
+.summary-text
+{
+    margin-top:22px;
+}
+
+.modal-sk-xp {
+    float: left;
+}
+
+.modal-sk-name {
+    float: left;
+}
+
+.modal-sk-name > input
+{
+    width:200px;
+}
+
+.skill-remove
+{
+    margin-top:25px;
+    margin-left:30px;
+}
+
+.skill-add
+{
+    margin-top:10px;
+    clear:both;
+    align-content:center;
+}
+
+.skill-add > button
+{
+    margin:auto;
+    display:block;
+    margin-bottom:35px;
+}
+
+input[type=number]
+{
+    width:110px;
+    margin-right:30px;
+}
+
+hr
+{
+    clear:both;
+}
+
+/*.intro-modal > div:nth-child(1)
+{
+    clear:both;
+}
+
+.intro-modal > div:nth-child(1)
+{
+    clear:both;
+}
+
+
+.modal-logo
+{
+    float:left;
+}*/
