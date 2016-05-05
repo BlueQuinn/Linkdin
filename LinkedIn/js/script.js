@@ -98,9 +98,6 @@ app.controller("ctrl-editor", function ($scope) {
         editor.content = information.background[obj][information.background[obj].length - 1];
         $(".modal-dialog").width(800);
     }
-
-
-
 });
 
 app.controller("ctrl-profile", function ($scope)
@@ -112,7 +109,6 @@ app.controller("ctrl-background", function ($scope)
 {
     information.background = $scope;
 });
-
 
 
 function getProperties(obj)     // get list of property names
@@ -145,7 +141,7 @@ function binding(src, dst, action)
 
 app.controller("ctrl-root", function($scope, $http)
 {
-    $http.get('https://api.myjson.com/bins/160uo').success(function (data)
+    $http.get('profile.json').success(function (data)
     {
         binding(data, information, connect);
     })
@@ -191,8 +187,3 @@ function getList(obj, property)
     }
     return arr;
 }
-
-$('.img-wrap .browse').on('click', function () {
-    var id = $(this).closest('.img-wrap').find('img').data('id');
-    alert('remove picture: ' + id);
-});
