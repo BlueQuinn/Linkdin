@@ -43,22 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="css\animation.css" />
     <Content Include="css\menu.css" />
     <Content Include="css\modal.css" />
@@ -100,11 +84,11 @@
     <Content Include="images\window.jpg" />
     <Content Include="images\xavier.jpg" />
     <Content Include="index.html" />
-    <Content Include="js\menu.js" />
-    <Content Include="js\modal.js" />
     <Content Include="js\script.js" />
     <Content Include="list.html" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="profile.html" />
     <Content Include="profile.json" />
     <None Include="Web.Debug.config">

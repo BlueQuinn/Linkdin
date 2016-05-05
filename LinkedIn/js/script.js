@@ -187,3 +187,8 @@ function getList(obj, property)
     }
     return arr;
 }
+
+function addSkill(type) {
+    editor.content.skill[type].push({ name: "", xp: 0 });
+    editor.$apply();
+}

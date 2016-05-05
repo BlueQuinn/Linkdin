@@ -39,5 +39,9 @@
         </button>
     </div>
 
-    <img ng-click="removeImg($index)" class="gallery img-responsive" ng-repeat="img in content.image" ng-src="{{img}}" data-toggle="popover" data-trigger="hover" data-content="Click to remove this image">
+    <p class="col-lg-12 hint">(Click on each image to remove)</p>
+
+    <img ng-click="removeImg($index)" class="gallery img-responsive" ng-repeat="img in content.image" ng-src="{{img}}">
+
+
 </div>

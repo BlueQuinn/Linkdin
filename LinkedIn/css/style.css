@@ -186,6 +186,11 @@ i
     animation-delay:1s;
 }
 
+.gallery:hover
+{
+    opacity:0.85;
+}
+
 .time
 {
     font-size:15px;

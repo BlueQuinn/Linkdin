@@ -89,6 +89,7 @@ input[type=file]
 
 .modal-sk-xp {
     float: left;
+    margin-right:15px;
 }
 
 .modal-sk-name {
@@ -137,4 +138,9 @@ hr
     margin:auto;
     display:block;
     margin-bottom:35px;
+}
+
+.hint
+{
+    text-align:center;
 }
